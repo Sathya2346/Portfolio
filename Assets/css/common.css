@@ -1,0 +1,229 @@
+/* portfolio.css */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+  background-color: #111111;
+}
+.color-yellow{
+    color: #FFB400;
+}
+.bg-yellow{
+    background-color: #FFB400;
+}
+.color-black{
+    background-color: #111111;
+}
+.bg-black{
+    background-color: #111111;
+}
+.color-white{
+    color: white;
+}
+.color-ash{
+    color: #C4C4C4;
+}
+.bg-DarkAsh{
+  background-color: #212121;
+  color: white;
+  padding: 8px;
+  border-radius: 20px;
+  width: 100px;
+}
+.All{
+  background-color: #111111;
+  min-height: 100vh;
+}
+
+            /* Nav Section Start */
+.media{
+  position:fixed;
+  right: 0px;
+  top: 80px;
+  z-index: 200;
+}
+.navSpan{
+  display: none;
+}
+.navIcon{
+    width: 25px;
+    height: 25px;
+    color: white;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: #2B2A2A;
+}
+.navActive, .navIcon:hover{
+  background-color: #FFB400;
+}
+.active{
+  background-color: #FFB400;
+}
+.display{
+  display: none;
+}
+.CloseIcon{
+  display: none;
+}
+.togg{
+  display: none;
+}
+a{
+    color: black;
+    text-decoration: none;
+  }
+            /* Nav Section End */
+
+
+@media only screen and (max-width : 1030px){
+  /* Home */
+  .media{
+    top:20px;
+  }
+  .HomeBtn{
+    height: 13vh;
+  }
+  .aboutCon{
+    border: 1px solid #252525;
+    margin: 20px;
+    height: 30vh;
+  }
+}
+@media only screen and (max-width : 770px){
+  /* Home */
+  .media{
+    right: -100%;
+  }
+  .navIcon{
+    background-color: #FFB400;
+  }
+  .mediaActive{
+    right: 200px;
+    top: 0px;
+    background-color: white;
+    width: 340px;
+    padding: 30px;
+    transition: 0.2s linear;
+    border-radius: 10px;
+  }
+  .CloseIcon{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+  }
+  .togg{
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 30px;
+    height: 30px;
+    color: white;
+  }
+  .navSpan{
+    display: inline-block;
+  }
+  .bannerImg{
+    width: 280px;
+    height: 320px;
+  }
+  .bannerImg>img{
+    width: 100%;
+    height: 100%;
+  }
+  .bannerHeading{
+    margin-top: -60px;
+  }
+  .colOfBannerHeading{
+    margin-left: 60px !important;
+  }
+  .homeEvent, .portEvent, .contactEvent, .aboutEvent{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .navSpan{
+    margin-top: 10px;
+  }
+  .homeIcon, .AboIcon{
+    margin-left: 40px !important;
+  }
+  .portSpan{
+    margin-left: 3px;
+  }
+  .contactEvent{
+    display: flex;
+  }
+  .ContIcon{
+    margin-left: 13px;
+  }
+  .HomeBtn{
+      height: 8.5vh;
+    }
+}
+
+@media only screen and (max-width : 350px){
+  /* Nav */
+  .media{
+    right: -100%;
+  }
+  .media>a{
+    color: black;
+    text-decoration: none;
+  }
+  .navIcon{
+    background-color: #FFB400;
+  }
+  .mediaActive{
+    right:60px !important;
+    top: 0px;
+    background-color: white;
+    width: 220px;
+    padding: 30px 18px;
+    transition: 0.2s linear;
+    border-radius: 10px;
+  }
+  .CloseIcon{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+  }
+  .togg{
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+    color: white;
+  }
+  .navSpan{
+    display: inline-block;
+  }
+  .homeEvent, .aboutEvent, .portEvent, .contactEvent{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .navSpan{
+    margin-top: 10px;
+  }
+  .homeIcon, .AboIcon{
+    margin-left: 55px !important;
+  }
+  .PortIcon{
+    margin-left: 10px;
+  }
+  .ContIcon{
+    margin-left: 28px;
+  }
+  .HomeBtn{
+      height: 8.5vh;
+    }
+}
+
+@media only screen and (min-width : 1400px){
+  .HomeBtn{
+    height: 13vh !important;
+  }
+}

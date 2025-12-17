@@ -1,0 +1,238 @@
+/* about.css */
+body{
+  overflow-x: hidden;
+}
+            /* About Section Start */
+.HomeBtn{
+    text-align: center;
+    width: 210px;
+    height: 8.5vh;
+    background-color: #111111;
+    color: white;
+    border: 1px solid #FFB400;
+    padding-right: 45px;
+    border-radius: 30px;
+    position: absolute;
+}         
+.arrowPosition{
+    position: relative;
+    margin-left: 160px;
+}            
+.About{
+    background-color: #111111;
+}                
+.aboutH1{
+    font-size: 120px;
+    font-weight: 700;
+    color: #222222;
+    position: absolute;
+    text-align: center;
+}             
+.aboutH3{
+    font-size: 60px;
+    font-weight: 800;
+    color: white;
+    position: relative;
+    text-align: center;
+    margin-left: 70px;
+    margin-top: 40px;
+}   
+.aboutCon{
+    border: 1px solid #252525;
+    margin: 20px;
+    height: 20vh;
+}
+.aboutLine{
+    border: 1px solid #252525;
+    margin: 20px 300px;
+}
+.progress-container {
+  width: 200px; /* Adjust as needed */
+  height: 200px; /* Adjust as needed */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.progress-circle {
+  position: relative;
+  width: 150px; /* Adjust as needed */
+  height: 150px; /* Adjust as needed */
+  border-radius: 50%;
+  background: conic-gradient(#ffc800 98%,  #2B2A2A 0); /* Yellow for 89%, dark grey for the rest */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.progress-circle1 {
+  position: relative;
+  width: 150px; /* Adjust as needed */
+  height: 150px; /* Adjust as needed */
+  border-radius: 50%;
+  background: conic-gradient(#ffc800 89%,  #2B2A2A 0); /* Yellow for 89%, dark grey for the rest */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.progress-circle2 {
+  position: relative;
+  width: 150px; /* Adjust as needed */
+  height: 150px; /* Adjust as needed */
+  border-radius: 50%;
+  background: conic-gradient(#ffc800 75%,  #2B2A2A 0); /* Yellow for 89%, dark grey for the rest */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.progress-circle3 {
+  position: relative;
+  width: 150px; /* Adjust as needed */
+  height: 150px; /* Adjust as needed */
+  border-radius: 50%;
+  background: conic-gradient(#ffc800 95%,  #2B2A2A 0); /* Yellow for 89%, dark grey for the rest */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.progress-circle4 {
+  position: relative;
+  width: 150px; /* Adjust as needed */
+  height: 150px; /* Adjust as needed */
+  border-radius: 50%;
+  background: conic-gradient(#ffc800 95%,  #2B2A2A 0); /* Yellow for 89%, dark grey for the rest */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.progress-circle5 {
+  position: relative;
+  width: 150px; /* Adjust as needed */
+  height: 150px; /* Adjust as needed */
+  border-radius: 50%;
+  background: conic-gradient(#ffc800 80%,  #2B2A2A 0); /* Yellow for 89%, dark grey for the rest */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.progress-circle6 {
+  position: relative;
+  width: 150px; /* Adjust as needed */
+  height: 150px; /* Adjust as needed */
+  border-radius: 50%;
+  background: conic-gradient(#ffc800 80%,  #2B2A2A 0); /* Yellow for 89%, dark grey for the rest */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.progress-circle7 {
+  position: relative;
+  width: 150px; /* Adjust as needed */
+  height: 150px; /* Adjust as needed */
+  border-radius: 50%;
+  background: conic-gradient(#ffc800 80%,  #2B2A2A 0); /* Yellow for 89%, dark grey for the rest */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.progress-circle::before {
+  content: "";
+  position: absolute;
+  width: 130px; /* Adjust as needed */
+  height: 130px; /* Adjust as needed */
+  border-radius: 50%;
+  background-color: #000; /* Dark background color */
+}
+
+.progress-value {
+  position: relative;
+  font-size: 24px; /* Adjust as needed */
+  font-weight: bold;
+  color: #fff; /* White text color */
+}
+
+.progress-label {
+  margin-top: 10px;
+  font-size: 16px; /* Adjust as needed */
+  color: #fff; /* White text color */
+}
+.studyIcon{
+  height: 30px;
+  width: 30px;
+  background-color: #FFB400;
+  border: none;
+  color: white;
+  padding: 15px;
+  border-radius: 67% 33% 29% 71% / 39% 46% 54% 61%;
+    animation-name: icon-animat;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    transition: 0.5s;
+}
+@keyframes icon-animat {
+    0%  {border-radius: 67% 33% 29% 71% / 39% 46% 54% 61%;}
+
+    25% {border-radius: 69% 31% 19% 81% / 43% 37% 63% 57%;}
+
+    50% {border-radius: 67% 33% 16% 84% / 57% 37% 63% 43%;}
+
+    75% {border-radius: 77% 23% 61% 39% / 36% 61% 39% 64%;}
+
+    100% {border-radius: 67% 33% 29% 71% / 39% 46% 54% 61%;}
+}
+                /* About Section End */
+                /* Media Query */
+@media only screen and (min-width : 1400px){
+  .aboutCon{
+    border: 1px solid #252525;
+    margin: 20px;
+    height: 20vh;
+  }
+  .HomeBtn{
+    height: 8.5vh !important;
+  }
+}
+
+@media only screen and (max-width : 1030px){
+  /* Home */
+  .media{
+    top:20px;
+  }
+  .HomeBtn{
+    height: 8.5vh;
+  }
+  .aboutCon{
+    border: 1px solid #252525;
+    margin: 20px;
+    height: 20vh;
+  }
+}
+@media only screen and (max-width : 770px){
+  /* About */
+  .aboutH1{
+    font-size: 60px;
+    font-weight: 700;
+    color: #222222;
+    position: absolute;
+    text-align: center;
+  }
+  .aboutH3{
+      font-size: 30px;
+      font-weight: 800;
+      color: white;
+      position: relative;
+      text-align: center;
+      margin-left: 8px;
+      margin-top: 18px;
+  }
+  .aboutCon{
+    border: 1px solid #252525;
+    margin: 20px;
+    width: 150px;
+    height: 20vh;
+  }
+  .HomeBtn{
+    height: 8.5vh !important;
+  }
+}

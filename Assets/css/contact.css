@@ -1,0 +1,140 @@
+
+            /* Contact Section Start */
+.HomeBtn{
+    text-align: center;
+    width: 210px;
+    height: 8.5vh;
+    background-color: #111111;
+    color: white;
+    border: 1px solid #FFB400;
+    padding-right: 45px;
+    border-radius: 30px;
+    position: absolute;
+}         
+.arrowPosition{
+    position: relative;
+    margin-left: 160px;
+}            
+.Contact{
+  height: auto;
+  background-color: #111111;
+}                
+.ContactH1{
+    font-size: 120px;
+    font-weight: 700;
+    color: #222222;
+    position: absolute;
+    text-align: center;
+}             
+.ContactH3{
+    font-size: 50px;
+    font-weight: 800;
+    color: white;
+    position: relative;
+    text-align: center;
+    margin-top: 50px;
+}      
+.conIconsyellow{
+  width: 30px;
+  height: 30px;
+  color: white;
+  background-color: #FFB400;
+  padding: 10px;
+  border-radius: 10px;
+}                
+.ContactIputs{
+  height: 8vh;
+  margin-left: 30px;
+  padding-left:15px;
+  background-color: #252525;
+  border: none;
+  border-radius: 25px;
+  color: white;
+}
+textarea{
+  width: 90%;
+  height: 30vh;
+  margin-left: 30px;
+  padding-left:20px;
+  background-color: #252525;
+  border: none;
+  border-radius: 25px;
+  color: white;
+}
+.ContactIconsSocial{
+  color: white;
+  width: 20px;
+  height: 20px;
+  padding: 15px;
+  background-color: #2B2A2A;
+  border-radius: 50%;
+}
+.ContactIconsSocial:hover{
+  background-color: #FFB400;
+}
+button:hover{
+  background-color: #FFB400;
+}
+                /* Contact Section End */
+
+
+
+
+                /* Media Query */
+
+@media only screen and (min-width : 1400px){
+  .HomeBtn{
+    height: 8.5vh !important;
+  }
+}
+@media only screen and (max-width : 1030px){
+  .ContactIputs{
+    width: 150px;
+    margin-left: 30px;
+  }
+}
+@media only screen and (max-width : 770px){
+  /* Contact */
+  .ContactIputs{
+    height: 10vh;
+    padding-left:15px;
+    background-color: #252525;
+    border: none;
+    border-radius: 25px;
+  }
+  textarea{
+    width: 75%;
+    height: 30vh;
+    padding-left:20px;
+    background-color: #252525;
+    border: none;
+    border-radius: 25px;
+}
+}
+@media only screen and (max-width : 350px){
+  .ContactH1{
+    font-size: 60px;
+    font-weight: 700;
+    color: #222222;
+    position: absolute;
+    text-align: center;
+  }
+  .ContactH3{
+      font-size: 30px;
+      font-weight: 800;
+      color: white;
+      position: relative;
+      text-align: center;
+      margin-top: 20px;
+  }
+  .conIconsyellow{
+    width: 20px;
+    height: 20px;
+  }
+  .conMobile{
+    width: 25px;
+  }
+  .ContactIputs, .form-textarea{
+    width: 230px;
+  }
+}

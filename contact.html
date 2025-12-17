@@ -1,0 +1,105 @@
+<!-- contact.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortFolio</title>
+    <!-- External Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Marcellus&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Solway:wght@300;400;500;700;800&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Bootsrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+        <!-- External Css -->
+    <link rel="stylesheet" href="./Assets/css/common.css">
+    <link rel="stylesheet" href="./Assets/css/contact.css">
+</head>
+<body>
+    <div class="All">
+                            <!-- Banner Section Start -->
+                    <p><ion-icon name="menu-outline" class="togg"></ion-icon></p>
+                     <div class="col-sm-1 mt-5 media">
+                        <h5><ion-icon name="close-outline" class="CloseIcon"></ion-icon></h5>
+                        <h5><a href="index.html" class="homeEvent"><span class="navSpan">HOME</span><ion-icon name="home-outline" class="navIcon homeIcon"></ion-icon></a></h5>
+                        <h5><a href="about.html" class="aboutEvent"><span class="navSpan">ABOUT</span><ion-icon name="person-outline" class="navIcon AboIcon"></ion-icon></a></h5>
+                        <h5><a href="portfolio.html" class="portEvent"><span class="navSpan portSpan">PORTFOLIO</span><ion-icon name="briefcase-outline" class="navIcon PortIcon"></ion-icon></a></h5>
+                        <h5><a href="contact.html" class="contactEvent"><span class="navSpan conatSpan">CONTACT</span><ion-icon name="mail-open-outline" class="navIcon ContIcon navActive"></ion-icon></a></h5>
+                    </div>
+                            <!-- Banner Section End -->
+                            <!-- Contact Section Start -->
+                    <section class="Contact">
+                        <div class="container py-5" data-aos="fade-up" data-aos-duration="1500">
+                            <div class="row">
+                                <h1 class="ContactH1">CONTACT</h1>
+                                <h3 class="ContactH3">GET IN <span class="color-yellow">TOUCH</span></h3>
+                            </div>
+                            <div class="row my-5">
+                                <div class="col col-sm-8 col-lg-4">
+                                    <h4 class="color-white">DON'T BE SHY!</h4>
+                                    <p class="color-white">Feel free to get in touch with me. I am always <br> open to discussing new projects, creative <br>
+                                        ideas or opportunities to be part of your <br> visions.</p>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col col-lg-3 col-sm-2 conMobile">
+                                                <p><ion-icon name="mail" class="conIconsyellow"></ion-icon></p>
+                                                <p><ion-icon name="call" class="conIconsyellow"></ion-icon></p>
+                                            </div>
+                                            <div class="col col-lg-6 conEmail">
+                                                <div class="row">
+                                                    <h6 class="lead color-ash">MAIL ME</h6>
+                                                    <p class="color-white">ganesansathya2346@gmail.com</p>
+                                                </div>
+                                                <div class="row">
+                                                    <h6 class="lead color-ash">CALL ME</h6>
+                                                    <p class="color-white">+91 9786955907</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-evenly mt-4">
+                                            <div class=""><a href="https://github.com/Sathya2346" target="_blank"><ion-icon name="logo-github" class="ContactIconsSocial"></ion-icon></a></div>
+                                            <div class=""><a href="https://www.linkedin.com/in/sathya-ganesan-317647262/" target="_blank"><ion-icon name="logo-linkedin" class="ContactIconsSocial"></ion-icon></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-lg-8 mt-sm-5">
+                                    <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                                        <!-- Hidden Input Start -->
+                                        <input type="hidden" name="access_key" value="a845490f-28a7-448c-ba94-a99afa679408" />
+                                        <input type="hidden" name="subject" value="New Contact Form Submission from Web3Forms" />
+                                        <input type="hidden" name="from_name" value="My Website" />
+                                        <!-- Hidden Input End -->
+                                        <input type="text" id="name" name="name" placeholder="YOUR NAME" class="form-input ContactIputs my-3 my-lg-0">
+                                        <input type="email" id="email" name="email" placeholder="YOUR EMAIl" class="form-input ContactIputs">
+                                        <input type="number"  id="phone" name="phone" placeholder="YOUR MOBILE" class="form-input ContactIputs my-3 my-lg-0">
+                                        <br><br>
+                                        <textarea  class="form-textarea" id="message" name="message" class="form-textarea"></textarea><br><br>
+                                        <div class="ms-5"><a href="#" class="mt-5" onclick="send()"><button class="HomeBtn fw-bold form-submit">SEND MESSAGE</button></a>
+                                            <p class="arrowPosition"><span><ion-icon name="paper-plane" class="bg-yellow" style="color: white; border-radius: 25px;width: 30px;height: 30px; padding:10px;"></ion-icon></span></p>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                            <!-- Contact Section End -->
+    
+    </div>    
+
+
+    <!-- Script -->
+    <script src="./Assets/js/script.js"></script>
+        <!-- Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+        <!-- Bootsrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+        <!-- Icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</body>
+</html>

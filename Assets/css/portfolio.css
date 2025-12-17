@@ -1,0 +1,171 @@
+body{
+  overflow-x: hidden;
+}
+/* ================= PORTFOLIO ================= */
+.Portfolio{
+  background:#111111;
+}
+
+.PortfolioH1{
+  font-size:120px;
+  font-weight:700;
+  color:#222222;
+  position:absolute;
+  text-align:center;
+}
+
+.PortfolioH3{
+  font-size:50px;
+  font-weight:800;
+  color:white;
+  position:relative;
+  text-align:center;
+  margin-top:50px;
+}
+
+/* ================= WORK COMMON ================= */
+.work-1,.work-2,.work-3,.work-4,.work-5,
+.work-6,.work-7,.work-8,.work-9,.work-10,
+.work-11,.work-12,.work-13,.work-14,.work-15{
+  height:30vh;
+  position:relative;
+  overflow:hidden;
+  margin: 20px 0px;
+}
+
+.work-1>a>img,.work-2>a>img,.work-3>a>img,.work-4>a>img,.work-5>a>img,
+.work-6>a>img,.work-7>a>img,.work-8>a>img,.work-9>a>img,.work-10>a>img,
+.work-11>a>img,.work-12>a>img,.work-13>a>img,.work-14>a>img,.work-15>a>img{
+  width:100%;
+  height:100%;
+  display:block;
+  opacity:1;
+  transition:.5s ease;
+  backface-visibility:hidden;
+}
+
+.work-1>a>img:hover,.work-2>a>img:hover,.work-3>a>img:hover,.work-4>a>img:hover,.work-5>a>img:hover,
+.work-6>a>img:hover,.work-7>a>img:hover,.work-8>a>img:hover,.work-9>a>img:hover,.work-10>a>img:hover,
+.work-11>a>img:hover,.work-12>a>img:hover,.work-13>a>img:hover,.work-14>a>img:hover,.work-15>a>img:hover{
+  scale:1.1;
+}
+
+/* ================= CLICK COMMON ================= */
+.click-1,.click-2,.click-3,.click-4,.click-5,
+.click-6,.click-7,.click-8,.click-9,.click-10,
+.click-11,.click-12,.click-13,.click-14,.click-15{
+  transition:.5s ease;
+  opacity:0;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  text-align:center;
+}
+
+/* Hover image fade */
+.work-1:hover .work-1>a>img,
+.work-2:hover .work-2>a>img,
+.work-3:hover .work-3>a>img,
+.work-4:hover .work-4>a>img,
+.work-5:hover .work-5>a>img,
+.work-6:hover .work-6>a>img,
+.work-7:hover .work-7>a>img,
+.work-8:hover .work-8>a>img,
+.work-9:hover .work-9>a>img,
+.work-10:hover .work-10>a>img,
+.work-11:hover .work-11>a>img,
+.work-12:hover .work-12>a>img,
+.work-13:hover .work-13>a>img,
+.work-14:hover .work-14>a>img,
+.work-15:hover .work-15>a>img{
+  opacity:.3;
+}
+
+/* Hover text show */
+.work-1:hover .click-1,
+.work-2:hover .click-2,
+.work-3:hover .click-3,
+.work-4:hover .click-4,
+.work-5:hover .click-5,
+.work-6:hover .click-6,
+.work-7:hover .click-7,
+.work-8:hover .click-8,
+.work-9:hover .click-9,
+.work-10:hover .click-10,
+.work-11:hover .click-11,
+.work-12:hover .click-12,
+.work-13:hover .click-13,
+.work-14:hover .click-14,
+.work-15:hover .click-15{
+  opacity:1;
+}
+
+/* ================= TEXT COMMON ================= */
+.text-1,.text-2,.text-3,.text-4,.text-5,
+.text-6,.text-7,.text-8,.text-9,.text-10,
+.text-11,.text-12,.text-13,.text-14,.text-15{
+  background:#252525;
+  color:white;
+  font-size:16px;
+  padding:16px 32px;
+}
+
+/* ================= MEDIA QUERIES ================= */
+
+/* Large screens */
+@media (min-width:1400px){
+  .work-1,.work-2,.work-3,.work-4,.work-5,
+  .work-6,.work-7,.work-8,.work-9,.work-10,
+  .work-11,.work-12,.work-13,.work-14,.work-15{
+    width:380px;
+    height:70vh;
+    margin:30px 0;
+  }
+}
+
+/* Laptop */
+@media (max-width:1030px){
+  .work-1,.work-2,.work-3,.work-4,.work-5,
+  .work-6,.work-7,.work-8,.work-9,.work-10,
+  .work-11,.work-12,.work-13,.work-14,.work-15{
+    width:280px;
+    height:40vh;
+    margin:20px 0;
+  }
+}
+
+/* Tablet */
+@media (max-width:770px){
+  .PortfolioH1{font-size:100px;}
+  .PortfolioH3{
+    font-size:40px;
+    margin-left:30px;
+    margin-top:40px;
+  }
+
+  .work-1,.work-2,.work-3,.work-4,.work-5,
+  .work-6,.work-7,.work-8,.work-9,.work-10,
+  .work-11,.work-12,.work-13,.work-14,.work-15{
+    width:300px;
+    height:40vh;
+  }
+}
+
+/* Small phones */
+@media (max-width:350px){
+  .PortfolioH1{font-size:60px;}
+  .PortfolioH3{
+    font-size:20px;
+    margin-top:25px;
+    margin-left:0;
+  }
+
+  .work-1,.work-2,.work-3,.work-4,.work-5,
+  .work-6,.work-7,.work-8,.work-9,.work-10,
+  .work-11,.work-12,.work-13,.work-14,.work-15{
+    width:300px;
+    height:40vh;
+    margin:20px 0;
+  }
+}
