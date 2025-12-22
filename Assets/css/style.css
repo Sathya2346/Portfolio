@@ -230,6 +230,34 @@ a{
       height: 8.5vh;
     }
 }
+@media only screen and (max-width : 450px){
+  .overAll::after{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: #111111;
+      z-index: -1;
+  }
+  .bannerImg>img{
+    margin-top: -50px !important;
+    margin-left: 30px;
+  }
+  .mediaActive{
+    right:70px !important;
+    top: 0px;
+    background-color: white;
+    width: 280px;
+    padding: 30px 18px;
+    transition: 0.2s linear;
+    border-radius: 10px;
+  }
+  .banHeader{
+    margin-left: 10px !important;
+  }
+}
+@media only screen and (max-width : 350px){
+}
 @media only screen and (max-width : 350px){
   .overAll{
       width: 100vw;
@@ -246,6 +274,10 @@ a{
       left: 0;
       background-color: #111111;
       z-index: -1;
+  }
+  .bannerImg>img{
+    margin-top: 20px !important;
+    margin-left: 0px;
   }
   /* Home */
   .colOfBannerHeading{
