@@ -1,93 +1,29 @@
-/* style.css */
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-.color-yellow{
-    color: #FFB400;
-}
-.bg-yellow{
-    background-color: #FFB400;
-}
-.color-black{
-    background-color: #111111;
-}
-.bg-black{
-    background-color: #111111;
-}
-.color-white{
-    color: white;
-}
-.color-ash{
-    color: #C4C4C4;
-}
-.bg-DarkAsh{
-  background-color: #212121;
-  color: white;
-  padding: 8px;
-  border-radius: 20px;
-  width: 100px;
-}
-.All{
-  background-color: #111111;
-  height: 100vh;
-  overflow-x: hidden;
-}
+
 
                 /* Banner Section Start */
-.overAll{
-    width: 100vw;
-    height: auto;
-    position: relative;
-    padding: 50px 0px;
-    background-color: #111111;
-    z-index: 1;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.overAll::after{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    clip-path: polygon(0 0, 34% 0, 100% 100%, 0% 100%);
-    background-color: #FFB400;
-    width: 25%;
-    height: 100vh;
-    z-index: -1;
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #111;
+  padding-top: 100px; /* For fixed navbar */
 }
-.bannerHeading{
-    font-size: 50px;
-    font-weight: 600;
-    font-family: 'poppins',sans-serif;
+
+
+/* Colors */
+.color-yellow {
+  color: #FFB400;
 }
-.HomeBtn{
-    text-align: center;
-    width: 210px;
-    height: 8.5vh;
-    background-color: #111111;
-    color: white;
-    border: 1px solid #FFB400;
-    padding-right: 45px;
-    border-radius: 30px;
-    position: absolute;
-}         
-.arrowPosition{
-    position: relative;
-    margin-left: 160px;
+
+.bg-black {
+  background-color: #111 !important;
 }
-.media{
-  position:fixed;
-  right: 0px;
-  margin-top: 130px;
-  z-index: 200;
-}
-a{
-    color: black;
-    text-decoration: none;
-  }
-.navSpan{
-  display: none;
-}
+
+/* Navbar */
 .navIcon{
     width: 25px;
     height: 25px;
@@ -99,257 +35,94 @@ a{
 .navActive, .navIcon:hover{
   background-color: #FFB400;
 }
-.bannerImg{
-    width: 300px;
-    height: 350px;
+.navbar .nav-link {
+  color: white;
+  font-weight: 500;
+  transition: 0.3s;
 }
-.bannerImg>img{
-    width: 100%;
-    height: 100%;
-    border-radius: 15px;
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: #FFB400;
 }
-.active{
+
+.navbar-toggler {
+  border-color: rgba(255, 180, 0, 0.6);
+}
+
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+
+/* Banner */
+.overAll {
+  width: 100%;
+  position: relative;
+  min-height: calc(100vh - 80px);
+  padding: 50px 0px;
+  z-index: 1;
+}
+
+.overAll::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  clip-path: polygon(0 0, 35% 0, 100% 100%, 0% 100%);
+  width: 25%;
+  height: 100%;
   background-color: #FFB400;
-}
-.display{
-  display: none;
-}
-.CloseIcon{
-  display: none;
-}
-.togg{
-  display: none;
-}
-                /* Banner Section End */
-                
-                
-                
-
-
-                                  /* Media Query */
-@media only screen and (max-width : 1030px){
-  /* Home */
-  .media{
-    top:20px;
-  }
-  .bannerImg{
-    width: 300px;
-    height: 340px;
-  }
-  .bannerImg>img{
-    margin-top: 30px;
-    width: 100%;
-    height: 100%;
-  }
-  .bannerHeading{
-    margin-top: -60px;
-  }
-  .colOfBannerHeading{
-    margin-left: 30px;
-  }
-  .HomeBtn{
-    height: 8.5vh;
-    width: 210px;
-  }
-  .media{
-  position:fixed;
-  right: 20px;
-  margin-top: 100px;
-  z-index: 200;
-  }
+  z-index: -1;
+    top: 0;
+    left: 0;
 }
 
-@media only screen and (max-width : 770px){
-  /* Home */
-  .media{
-    right: -100%;
-  }
-  .navIcon{
-    background-color: #FFB400;
-  }
-  .mediaActive{
-    right: 200px;
-    top: 0px;
-    background-color: white;
-    width: 340px;
-    padding: 30px;
-    transition: 0.2s linear;
-    border-radius: 10px;
-  }
-  .CloseIcon{
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    margin-left: 10px;
-  }
-  .togg{
-    display: inline-block;
-    margin-top: 20px;
-    margin-left: 20px;
-    width: 30px;
-    height: 30px;
-    color: white;
-  }
-  .navSpan{
-    display: inline-block;
-  }
-  .bannerImg{
-    width: 280px;
-    height: 320px;
-  }
-  .bannerImg>img{
-    width: 100%;
-    height: 100%;
-  }
-  .bannerHeading{
-    margin-top: -60px;
-  }
-  .colOfBannerHeading{
-    margin-left: 60px !important;
-  }
-  .homeEvent, .portEvent, .contactEvent, .aboutEvent{
-    display: flex;
-    justify-content: space-evenly;
-  }
-  .navSpan{
-    margin-top: 10px;
-  }
-  .homeIcon, .AboIcon{
-    margin-left: 40px !important;
-  }
-  .portSpan{
-    margin-left: 3px;
-  }
-  .contactEvent{
-    display: flex;
-  }
-  .ContIcon{
-    margin-left: 13px;
-  }
-  .HomeBtn{
-      height: 8.5vh;
-    }
-}
-@media only screen and (max-width : 450px){
-  .overAll::after{
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      background-color: #111111;
-      z-index: -1;
-  }
-  .bannerImg>img{
-    margin-top: -50px !important;
-    margin-left: 30px;
-  }
-  .mediaActive{
-    right:70px !important;
-    top: 0px;
-    background-color: white;
-    width: 280px;
-    padding: 30px 18px;
-    transition: 0.2s linear;
-    border-radius: 10px;
-  }
-  .banHeader{
-    margin-left: 10px !important;
-  }
-}
-@media only screen and (max-width : 350px){
-}
-@media only screen and (max-width : 350px){
-  .overAll{
-      width: 100vw;
-      height: auto;
-      position: relative;
-      padding: 50px 0px;
-      background-color: #111111;
-      z-index: 1;
-  }
-  .overAll::after{
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      background-color: #111111;
-      z-index: -1;
-  }
-  .bannerImg>img{
-    margin-top: 20px !important;
-    margin-left: 0px;
-  }
-  /* Home */
-  .colOfBannerHeading{
-    margin-left: -0px !important;
-  }
-  .bannerImg{
-    margin-top: -80px;
-  }
-  /* Nav */
-  .media{
-    right: -100%;
-  }
-  .media>a{
-    color: black;
-    text-decoration: none;
-  }
-  .navIcon{
-    background-color: #FFB400;
-  }
-  .mediaActive{
-    right:60px !important;
-    top: 0px;
-    background-color: white;
-    width: 220px;
-    padding: 30px 18px;
-    transition: 0.2s linear;
-    border-radius: 10px;
-  }
-  .CloseIcon{
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    margin-left: 10px;
-  }
-  .togg{
-    display: inline-block;
-    margin-top: 20px;
-    margin-left: 10px;
-    width: 30px;
-    height: 30px;
-    color: white;
-  }
-  .navSpan{
-    display: inline-block;
-  }
-  .homeEvent, .aboutEvent, .portEvent, .contactEvent{
-    display: flex;
-    justify-content: space-evenly;
-  }
-  .navSpan{
-    margin-top: 10px;
-  }
-  .homeIcon, .AboIcon{
-    margin-left: 55px !important;
-  }
-  .PortIcon{
-    margin-left: 10px;
-  }
-  .ContIcon{
-    margin-left: 28px;
-  }
-  .HomeBtn{
-      height: 8.5vh;
-    }
+/* Image */
+.banner-img {
+  max-width: 280px;
 }
 
-  @media only screen and (min-width : 1400px){
-    /* Home */
-    .media{
-      top:10px;
-    }
-    .HomeBtn{
-      height: 9vh !important;
-    }
+/* Heading */
+.bannerHeading {
+  font-size: clamp(28px, 4vw, 48px);
+  font-weight: 600;
+}
+
+/* Button */
+.HomeBtn {
+  border: 1px solid #FFB400;
+  color: white;
+  background: transparent;
+  border-radius: 30px;
+}
+.HomeBtn:hover{
+  background-color: #FFB400;
+  color: white;
+}
+.HomeBtn:hover .arrowBtn{
+  color: #FFB400;
+  background-color: white;
+}
+
+/* Arrow */
+.arrowBtn {
+  width: 40px;
+  height: 40px;
+  background-color: #FFB400;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .overAll::after {
+    display: none;
   }
+
+  .banner-img {
+    max-width: 220px;
+  }
+}
