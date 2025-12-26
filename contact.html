@@ -14,20 +14,50 @@
     <!-- Bootsrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
         <!-- External Css -->
-    <link rel="stylesheet" href="./Assets/css/common.css">
     <link rel="stylesheet" href="./Assets/css/contact.css">
 </head>
 <body>
     <div class="All">
-                            <!-- Banner Section Start -->
-                    <p><ion-icon name="menu-outline" class="togg"></ion-icon></p>
-                     <div class="col-sm-1 mt-5 media">
-                        <h5><ion-icon name="close-outline" class="CloseIcon"></ion-icon></h5>
-                        <h5><a href="index.html" class="homeEvent"><span class="navSpan">HOME</span><ion-icon name="home-outline" class="navIcon homeIcon"></ion-icon></a></h5>
-                        <h5><a href="about.html" class="aboutEvent"><span class="navSpan">ABOUT</span><ion-icon name="person-outline" class="navIcon AboIcon"></ion-icon></a></h5>
-                        <h5><a href="portfolio.html" class="portEvent"><span class="navSpan portSpan">PORTFOLIO</span><ion-icon name="briefcase-outline" class="navIcon PortIcon"></ion-icon></a></h5>
-                        <h5><a href="contact.html" class="contactEvent"><span class="navSpan conatSpan">CONTACT</span><ion-icon name="mail-open-outline" class="navIcon ContIcon navActive"></ion-icon></a></h5>
-                    </div>
+                    <!-- NAVBAR -->
+        <div class="container-fluid px-lg-5">
+        <nav class="navbar navbar-expand-lg bg-black fixed-top px-4 px-lg-5  py-3">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#mainNavbar" style="color: white !important;">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav ms-auto gap-lg-3 text-center">
+
+                <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                    <span class="d-lg-none">HOME</span><ion-icon name="home-outline" class="navIcon d-none d-lg-block"></ion-icon>
+                </a>
+                </li>
+
+                <li class="nav-item">
+                <a class="nav-link" href="about.html">
+                    <span class="d-lg-none">ABOUT</span><ion-icon name="person-outline" class="navIcon d-none d-lg-block"></ion-icon>
+                </a>
+                </li>
+
+                <li class="nav-item">
+                <a class="nav-link" href="portfolio.html">
+                    <span class="d-lg-none">PORTFOLIO</span><ion-icon name="briefcase-outline" class="navIcon d-none d-lg-block"></ion-icon>
+                </a>
+                </li>
+
+                <li class="nav-item">
+                <a class="nav-link active" href="contact.html">
+                    <span class="d-lg-none">CONTACT</span><ion-icon name="mail-open-outline" class="navIcon d-none d-lg-block navActive"></ion-icon>
+                </a>
+                </li>
+
+            </ul>
+            </div>
+        </nav>
+    </div>
                             <!-- Banner Section End -->
                             <!-- Contact Section Start -->
                     <section class="Contact">
@@ -37,7 +67,7 @@
                                 <h3 class="ContactH3">GET IN <span class="color-yellow">TOUCH</span></h3>
                             </div>
                             <div class="row my-5">
-                                <div class="col col-sm-8 col-lg-4">
+                                <div class="col col-sm-8 col-lg-5">
                                     <h4 class="color-white">DON'T BE SHY!</h4>
                                     <p class="color-white">Feel free to get in touch with me. I am always <br> open to discussing new projects, creative <br>
                                         ideas or opportunities to be part of your <br> visions.</p>
@@ -64,7 +94,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-12 col-lg-8 mt-sm-5">
+                                <div class="col-sm-12 col-lg-7 mt-sm-5">
                                     <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
                                         <!-- Hidden Input Start -->
                                         <input type="hidden" name="access_key" value="a845490f-28a7-448c-ba94-a99afa679408" />
@@ -73,11 +103,11 @@
                                         <!-- Hidden Input End -->
                                         <input type="text" id="name" name="name" placeholder="YOUR NAME" class="form-input ContactIputs my-3 my-lg-0">
                                         <input type="email" id="email" name="email" placeholder="YOUR EMAIl" class="form-input ContactIputs">
-                                        <input type="number"  id="phone" name="phone" placeholder="YOUR MOBILE" class="form-input ContactIputs my-3 my-lg-0">
+                                        <input type="number"  id="phone" name="phone" placeholder="YOUR MOBILE" class="form-input ContactIputs my-3">
                                         <br><br>
                                         <textarea  class="form-textarea" id="message" name="message" class="form-textarea"></textarea><br><br>
-                                        <div class="ms-5"><a href="#" class="mt-5" onclick="send()"><button class="HomeBtn fw-bold form-submit">SEND MESSAGE</button></a>
-                                            <p class="arrowPosition"><span><ion-icon name="paper-plane" class="bg-yellow" style="color: white; border-radius: 25px;width: 30px;height: 30px; padding:10px;"></ion-icon></span></p>
+                                        <div class="ms-5">
+                                            <button class="btn HomeBtn fw-bold form-submit"><a href="#" class="d-flex justify-content-between align-items-center" onclick="send()"><span>SEND MESSAGE</span><span class="arrowBtn ms-4"><ion-icon name="paper-plane"></ion-icon></span></a></button>
                                         </div>
                                     </form>
                                 </div>
@@ -86,10 +116,9 @@
                     </section>
                             <!-- Contact Section End -->
     
-    </div>    
+    </div>
 
-
-    <!-- Script -->
+        <!-- External Script -->
     <script src="./Assets/js/script.js"></script>
         <!-- Animation -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
