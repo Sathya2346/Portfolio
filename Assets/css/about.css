@@ -1,34 +1,107 @@
 /* about.css */
-body{
-  overflow-x: hidden;
-  background-color: #111111;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-            /* About Section Start */
-.HomeBtn{
-    text-align: center;
-    width: 210px;
-    height: 8.5vh;
-    background-color: #111111;
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #111;
+  color: white;
+  padding-top: 100px; /* For fixed navbar */
+  overflow-x: hidden;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+/* Colors */
+.color-yellow {
+  color: #FFB400;
+}
+
+.bg-black {
+  background-color: #111 !important;
+}
+[data-aos] {
+  overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar-nav {
+  max-width: 100%;
+}
+.navIcon{
+    width: 25px;
+    height: 25px;
     color: white;
-    border: 1px solid #FFB400;
-    padding-right: 45px;
-    border-radius: 30px;
-    position: absolute;
-}         
-.arrowPosition{
-    position: relative;
-    margin-left: 160px;
-}            
+    padding: 10px;
+    border-radius: 25px;
+    background-color: #2B2A2A;
+}
+.navActive, .navIcon:hover{
+  background-color: #FFB400;
+}
+.navbar .nav-link {
+  color: white;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: #FFB400;
+}
+
+.navbar-toggler {
+  border-color: rgba(255, 180, 0, 0.6);
+}
+
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+
+            /* About Section Start */
+
+/* Button */
+.HomeBtn {
+  border: 1px solid #FFB400;
+  color: white;
+  background: transparent;
+  border-radius: 30px;
+}
+.HomeBtn:hover{
+  background-color: #FFB400;
+  color: white;
+}
+.HomeBtn:hover .arrowBtn{
+  color: #FFB400;
+  background-color: white;
+}
+/* Arrow */
+.arrowBtn {
+  width: 40px;
+  height: 40px;
+  background-color: #FFB400;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+}
 .About{
     background-color: #111111;
-}                
+}
 .aboutH1{
     font-size: 120px;
     font-weight: 700;
     color: #222222;
     position: absolute;
     text-align: center;
-}             
+}
 .aboutH3{
     font-size: 60px;
     font-weight: 800;
@@ -37,19 +110,19 @@ body{
     text-align: center;
     margin-left: 70px;
     margin-top: 40px;
-}   
+}
 .aboutCon{
     border: 1px solid #252525;
-    margin: 20px;
-    height: 20vh;
+    height: auto;
 }
 .aboutLine{
     border: 1px solid #252525;
-    margin: 20px 300px;
+    margin: 20px auto;
 }
 .progress-container {
-  width: 200px; /* Adjust as needed */
-  height: 200px; /* Adjust as needed */
+  max-width: 200px;
+  width: 100%;
+  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -184,31 +257,6 @@ body{
 }
                 /* About Section End */
                 /* Media Query */
-@media only screen and (min-width : 1400px){
-  .aboutCon{
-    border: 1px solid #252525;
-    margin: 20px;
-    height: 20vh;
-  }
-  .HomeBtn{
-    height: 8.5vh !important;
-  }
-}
-
-@media only screen and (max-width : 1030px){
-  /* Home */
-  .media{
-    top:20px;
-  }
-  .HomeBtn{
-    height: 8.5vh;
-  }
-  .aboutCon{
-    border: 1px solid #252525;
-    margin: 20px;
-    height: 20vh;
-  }
-}
 @media only screen and (max-width : 770px){
   /* About */
   .aboutH1{
@@ -226,14 +274,5 @@ body{
       text-align: center;
       margin-left: 8px;
       margin-top: 18px;
-  }
-  .aboutCon{
-    border: 1px solid #252525;
-    margin: 20px;
-    width: 150px;
-    height: 20vh;
-  }
-  .HomeBtn{
-    height: 8.5vh !important;
   }
 }
