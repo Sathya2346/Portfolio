@@ -110,10 +110,12 @@ const AppContent = () => {
 };
 
 const App = () => {
+  const basename = window.location.pathname.startsWith("/Portfolio") ? "/Portfolio" : "/";
+
   return (
     <ThemeProvider>
       <DataProvider>
-        <Router>
+        <Router basename={basename}>
           <AppContent />
         </Router>
       </DataProvider>
