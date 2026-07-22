@@ -22,7 +22,7 @@ const Login = () => {
     // Default mock check
     // We can also check if a custom password exists in localStorage settings
     const storedSettings = localStorage.getItem("portfolio_settings");
-    let targetPassword = "admin123";
+    let targetPassword = "Sathya@2346";
     if (storedSettings) {
       try {
         const parsed = JSON.parse(storedSettings);
@@ -106,9 +106,6 @@ const Login = () => {
           </button>
         </form>
 
-        <span className="text-[9px] text-center text-dark-gray mt-2">
-          Note: Default development passkey is <code className="text-primary font-bold">admin123</code>
-        </span>
       </motion.div>
     </div>
   );
