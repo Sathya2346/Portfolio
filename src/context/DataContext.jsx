@@ -70,11 +70,11 @@ export const DataProvider = ({ children }) => {
     localStorage.setItem("portfolio_messages", JSON.stringify(messages));
   }, [messages]);
 
-  // One-time migration to link StepUp project in localStorage
+  // One-time migration to link StepUp project and add new Resume Builder project
   useEffect(() => {
     setProjects((prev) => {
       let changed = false;
-      const updated = prev.map((p) => {
+      let updated = prev.map((p) => {
         if (p.id === "proj-1" && (p.githubUrl === "https://github.com" || p.title === "E-Commerce Web Application" || p.liveUrl === "https://demo-ecommerce.sathyaganesan.dev")) {
           changed = true;
           return {
@@ -86,6 +86,48 @@ export const DataProvider = ({ children }) => {
         }
         return p;
       });
+
+      const hasProj4 = updated.some((p) => p.id === "proj-4");
+      if (!hasProj4) {
+        changed = true;
+        const newProj = {
+          id: "proj-4",
+          title: "AI-Powered Resume Builder",
+          subtitle: "Full-Stack Resume Engine with Live PDF Rendering",
+          category: "Java Full Stack",
+          duration: "Feb 2026 - Mar 2026",
+          status: "Completed",
+          thumbnail: "https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=800&auto=format&fit=crop&q=80",
+          screenshots: [
+            "https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=800&auto=format&fit=crop&q=80",
+            "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=800&auto=format&fit=crop&q=80"
+          ],
+          videoUrl: "",
+          githubUrl: "https://github.com/Sathya2346/resume-builder",
+          liveUrl: "https://resume-builder-f8xs.onrender.com/",
+          description: "A comprehensive full-stack resume compilation engine built with a Spring Boot REST API and a responsive React frontend. Users can construct customized, ATS-friendly professional resumes using modular forms, choose from curated design templates, and download their resume instantly as a PDF.",
+          techStack: ["Java", "Spring Boot", "MySQL", "React", "Vite", "Tailwind CSS", "PDFbox", "REST API", "Docker", "Render"],
+          caseStudy: {
+            features: [
+              "ATS-friendly resume templates with dynamic section reordering.",
+              "Interactive live-preview builder compiling form fields in real-time.",
+              "Instant client-side and server-side PDF generation using library pipelines.",
+              "Database user profile records storing resume history securely.",
+              "Responsive drag-and-drop workspace layout matching standard A4 dimensions."
+            ],
+            challenges: [
+              "Ensuring high-fidelity PDF layout compilation matching exact CSS print designs across multiple page-break scenarios.",
+              "Minimizing server memory footprints when multiple users trigger server-side PDF compilation concurrently."
+            ],
+            solutions: [
+              "Implemented custom page-break rules with CSS Page Media stylesheets and clean flexbox grids.",
+              "Engineered asynchronous processing queues and compressed PDF streams utilizing Apache PDFBox for server-side generation."
+            ]
+          }
+        };
+        updated.push(newProj);
+      }
+
       return changed ? updated : prev;
     });
   }, []);
