@@ -112,7 +112,7 @@ export const initialResumeData = {
       ],
       videoUrl: "https://www.w3schools.com/html/mov_bbb.mp4", // Demo video
       githubUrl: "https://github.com/Sathya2346/stepup",
-      liveUrl: "https://demo-ecommerce.sathyaganesan.dev",
+      liveUrl: "https://stepup-9j90.onrender.com/",
       description: "StepUp is a robust Spring Boot e-commerce ecosystem. It features secure role-based access control (RBAC), OTP registrations, an interactive cart/checkout pipeline, and an integrated customer support chatbot utilizing a custom fuzzy-matching Levenshtein distance algorithm for typo-tolerant FAQ responses and direct order tracking.",
       techStack: ["Java", "Spring Boot", "MySQL", "REST API", "HTML", "CSS", "Bootstrap", "JavaScript", "Razorpay API", "Docker"],
       caseStudy: {

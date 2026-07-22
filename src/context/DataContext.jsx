@@ -75,12 +75,13 @@ export const DataProvider = ({ children }) => {
     setProjects((prev) => {
       let changed = false;
       const updated = prev.map((p) => {
-        if (p.id === "proj-1" && (p.githubUrl === "https://github.com" || p.title === "E-Commerce Web Application")) {
+        if (p.id === "proj-1" && (p.githubUrl === "https://github.com" || p.title === "E-Commerce Web Application" || p.liveUrl === "https://demo-ecommerce.sathyaganesan.dev")) {
           changed = true;
           return {
             ...p,
             title: "StepUp - E-Commerce Web Application",
-            githubUrl: "https://github.com/Sathya2346/stepup"
+            githubUrl: "https://github.com/Sathya2346/stepup",
+            liveUrl: "https://stepup-9j90.onrender.com/"
           };
         }
         return p;
