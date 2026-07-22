@@ -72,6 +72,16 @@ export const DataProvider = ({ children }) => {
 
   // One-time migration to link StepUp project and add new Resume Builder project
   useEffect(() => {
+    setProfile((prev) => {
+      if (prev && (prev.resumeUrl === "#" || !prev.resumeUrl || prev.resumeUrl.includes("sathyaganesan.dev") || prev.resumeUrl.includes("resume.html"))) {
+        return {
+          ...prev,
+          resumeUrl: "/Sathya_Ganesan_Resume.pdf"
+        };
+      }
+      return prev;
+    });
+
     setProjects((prev) => {
       let changed = false;
       let updated = prev.map((p) => {

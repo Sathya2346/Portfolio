@@ -9,7 +9,7 @@ export const initialResumeData = {
     github: "https://github.com",
     linkedin: "https://linkedin.com",
     portfolio: "https://sathyaganesan.dev",
-    resumeUrl: "#", // Placeholder for download
+    resumeUrl: "/Sathya_Ganesan_Resume.pdf", // Path to the PDF resume
     bio: "Motivated Java Full Stack Developer with practical experience building scalable web applications using Java, Spring Boot, REST APIs, and MySQL. Skilled in frontend development with HTML5, CSS3, Bootstrap, and JavaScript. Experienced in MVC architecture, authentication systems, and role-based access control. Proven ability to lead projects, mentor junior developers, and deliver production-ready applications.",
     aboutBio: "I am an enthusiastic full-stack developer based in Tenkasi, Tamil Nadu. My passion lies in crafting high-performance backend systems combined with interactive, fluid user interfaces. With hands-on experience as a Project Lead and Trainer at Vetri IT Systems, I have mentored over 20+ trainees while directing production-grade software projects. I am continuously learning and integrating advanced AI solutions, including Agentic AI and Retrieval-Augmented Generation (RAG) applications, to deliver cutting-edge software products.",
     careerGoals: "To leverage my full-stack expertise in building next-generation enterprise applications and AI solutions, driving innovation while collaborating with cross-functional global teams in an agile environment.",
