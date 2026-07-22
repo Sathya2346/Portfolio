@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap');
+
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+@layer base {
+  body {
+    @apply font-inter bg-white text-black duration-300 transition-colors selection:bg-primary selection:text-white overflow-x-hidden;
+  }
+  
+  body.dark {
+    @apply bg-black-pure text-white;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-outfit font-semibold tracking-tight;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-dark-gray/30 rounded-full hover:bg-primary/50 transition-colors;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  @apply bg-dark-gray/20 rounded-full hover:bg-primary/60 transition-colors;
+}
+
+/* Lenis Smooth Scroll Config */
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+/* Glassmorphism Styles */
+.glass {
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.dark .glass {
+  background: rgba(18, 18, 18, 0.65);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.glass-nav {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(232, 77, 137, 0.05);
+}
+
+.dark .glass-nav {
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+/* Neumorphism Styles */
+.neumorphic-inset {
+  box-shadow: inset 6px 6px 12px #cfcfcf, inset -6px -6px 12px #ffffff;
+}
+
+.dark .neumorphic-inset {
+  box-shadow: inset 6px 6px 12px #050505, inset -6px -6px 12px #181818;
+}
+
+.neumorphic-card {
+  @apply bg-white-soft dark:bg-black-card transition-shadow duration-300;
+  box-shadow: 6px 6px 12px #e2e2e2, -6px -6px 12px #ffffff;
+}
+
+.dark .neumorphic-card {
+  box-shadow: 6px 6px 15px #030303, -6px -6px 15px #151515;
+}
+
+/* Custom Cursor styling */
+.custom-cursor {
+  width: 10px;
+  height: 10px;
+  background-color: #E84D89;
+  border-radius: 50%;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 9999;
+  transition: width 0.3s, height 0.3s, background-color 0.3s;
+}
+
+.custom-cursor-outline {
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(232, 77, 137, 0.5);
+  border-radius: 50%;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 9998;
+  transition: width 0.3s, height 0.3s, border-color 0.3s, transform 0.1s ease-out;
+}
+
+/* Hover glow effects */
+.hover-glow {
+  position: relative;
+  overflow: hidden;
+}
+
+.hover-glow::before {
+  content: '';
+  position: absolute;
+  top: var(--y, 0px);
+  left: var(--x, 0px);
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(circle, rgba(232,77,137,0.15) 0%, transparent 70%);
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.hover-glow:hover::before {
+  opacity: 1;
+}
+
+/* Skill Progress Circular styling */
+.circle-bar {
+  transform: rotate(-90deg);
+}
+
+/* Particle and shapes effects */
+.floating-element {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-15px) rotate(5deg);
+  }
+}
