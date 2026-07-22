@@ -189,8 +189,8 @@ const Home = () => {
             View Projects <FiFolder className="text-base" />
           </Link>
           <a
-            href={profile.resumeUrl}
-            download
+            href={window.location.pathname.startsWith("/Portfolio") ? "/Portfolio/Sathya_Ganesan_Resume.pdf" : "/Sathya_Ganesan_Resume.pdf"}
+            download="Sathya_Ganesan_Resume.pdf"
             className="px-8 py-3.5 rounded-full glass border border-black/10 dark:border-white/10 hover:border-primary/30 hover:text-primary text-sm font-semibold tracking-wide flex items-center gap-2 duration-300 transform hover:scale-105 clickable"
           >
             Download Resume <FiDownload className="text-base" />
