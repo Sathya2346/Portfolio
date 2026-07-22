@@ -90,7 +90,7 @@ const AIChatbot = () => {
             animate={{ opacity: 1, scale: 1, y: 0, x: 0 }}
             exit={{ opacity: 0, scale: 0.8, y: 100, x: -50 }}
             transition={{ type: "spring", damping: 25, stiffness: 250 }}
-            className="fixed bottom-24 left-8 z-50 w-[340px] md:w-[380px] h-[500px] rounded-2xl shadow-2xl border border-primary/20 flex flex-col overflow-hidden"
+            className="fixed bottom-24 left-8 z-[60] w-[340px] md:w-[380px] h-[500px] rounded-2xl shadow-2xl border border-primary/20 flex flex-col overflow-hidden bg-white dark:bg-black-rich"
           >
             {/* Header */}
             <div className="bg-primary p-4 text-white flex justify-between items-center">
@@ -104,8 +104,9 @@ const AIChatbot = () => {
                 </div>
               </div>
               <button
+                type="button"
                 onClick={() => setIsOpen(false)}
-                className="text-white hover:text-secondary duration-200 cursor-pointer"
+                className="text-white hover:text-secondary duration-200 cursor-pointer clickable relative z-10"
               >
                 <IoCloseOutline className="text-2xl" />
               </button>
@@ -146,7 +147,7 @@ const AIChatbot = () => {
             </div>
 
             {/* Input Bar */}
-            <div className="p-3 border-t border-black/5 dark:border-white/5 flex gap-2 items-center bg-white/50 dark:bg-black-rich">
+            <div className="p-3 border-t border-black/5 dark:border-white/5 flex gap-2 items-center bg-white dark:bg-black-rich">
               <input
                 type="text"
                 value={input}
